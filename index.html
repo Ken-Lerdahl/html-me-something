@@ -2,23 +2,43 @@
 
 <html>
    <head>
-      <title>Golf is Great</title>
+	  <title>Golf is Great</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css">
    </head>
 
    <body>
    		<header>
-   			<h1>Golf is Great, Even If the Golfer... Isn't!</h1>
-   		</header>
+			   <div id="navBar">
+			   	<nav>
+				   <ul style="text-decoration: none;">
+					<li><a href="#placesPlayed">Places I've Played</a></li>
+					<li><a href="#withFriends">Buddy Golf</a></li>
+					   <li><a href="#blowups">PGA Collapses</a></li>
+				   </ul>
+			   	</nav>
+				</div>
+		   </header>
+		   <div class="hero-image">
+			<div class="hero-text">
+				<h1>Golf is Great</h1>
+				<p id="heroSubtitle">Even If the Golfer... Isn't!</p>
+			</div>
+		</div>
    		<main>
-   			<article>
-   				<h2>Golf is Challenging, Even for the Best of the Best!</h2>
-   				<p>For an amateur, golf can be incredibly frustrating, and also fantastically rewarding. There have been plenty of rounds I've wanted to quit halfway through, but finish with moments that remind me just how much fun the sport can be! <em>But...</em></p>
-   				<h3>Even the Best Golfers in the World Struggle Sometimes!</h3>
-   				<div class="row">
-   					<div class="column">
-   						<img src="./images/blowups/norman1996masters.jpg" alt="Greg Norman at the 1996 Masters" style="width:256px;height:256px;">
+   			<article id="blowups">
+				<div class="sectionTopContent">
+   					<h2>Golf is Challenging, Even for the Best of the Best!</h2>
+   					<p>For an amateur, golf can be incredibly frustrating, and also fantastically rewarding. There have been plenty of rounds I've wanted to quit halfway through, but finish with moments that remind me just how much fun the sport can be! <em>But...</em></p>
+				  	<h3>Even the Best Golfers in the World Struggle Sometimes!</h3>
+				</div>
+   				<div class="blowupsGrid">
+   					<div class="blowupsItem1">
+						<figure>
+						   <img class="blowupsImage" src="./images/blowups/norman1996masters.jpg" alt="Greg Norman at the 1996 Masters"  style="width:95%;height:256px;">
+						   <figcaption>Norman hangs his head after watching his ball roll down the hill into water</figcaption>
+						</figure>
    						<h5>Greg Norman Blows Six Shot Lead at 1996 Masters</h5>
-   						<ul>
+   						<ul class="blowupsBullets">
    							<li>Snap hook into the trees from the opening tee</li>
    							<li>Double-bogey on 12 after coming up short in the water</li>
    						</ul>
@@ -26,10 +46,13 @@
    						-<em>Greg Norman, Winner of Zero Majors</em>
    						</p>
    					</div>
-   					<div class="column">
-   						<img src="./images/blowups/phil2006USopen.jpg" alt="Phil Mickelson Real Sad at 2006 US Open" style="width:256px;height:256px;">
+   					<div class="blowupsItem2">
+						<figure>
+						   <img class="blowupsImage" src="./images/blowups/phil2006USopen.jpg" alt="Phil Mickelson Real Sad at 2006 US Open" style="width:95%;height:256px;">
+						   <figcaption>Mickelson after double bogey putt</figcaption>
+						</figure>
    						<h5>Phil Mickelson Falls Apart on 18 at 2006 US Open</h5>
-   						<ul>
+   						<ul class="blowupsBullets">
    							<li>Needed par to win, bogey to force playoff</li>
    							<li>Here's how the last hole went for Phil:
    								<ul>
@@ -46,10 +69,13 @@
    							-<em>Phil Mickelson: Incredible Shotmaker, Very Sore Loser</em>
    						</p>
    					</div>
-   					<div class="column">
-   						<img src="./images/blowups/rory2011masters.jpg" alt="Rory Getting Advice On How To Shoot From Homeowner's Shrubs at 2011 Masters" style="width:256px;height:256px;">
-   						<h5>GRory McIlroy Can't Handle The Pressure of Three Days Atop The Leaderboard</h5>
-   						<ul>
+   					<div class="blowupsItem3">
+						<figure>
+						   <img class="blowupsImage" src="./images/blowups/rory2011masters.jpg" alt="Rory Getting Advice On How To Shoot From Homeowner's Shrubs at 2011 Masters" style="width:95%;height:256px;">
+						   <figcaption>McIlroy gets advice on how to play from shrubs</figcaption>
+						</figure>
+   						<h5>Rory McIlroy Can't Handle The Pressure of Three Days Atop The Leaderboard</h5>
+   						<ul class="blowupsBullets">
    							<li>65-69-70 through first three rounds, four shot lead, all alone in 1st place</li>
    							<li>Mistakes all over on Sunday, cards a final round 80, ties for 15th place</li>
    						</ul>
@@ -59,107 +85,108 @@
    					</div>
 				</div>
 			</article>
-			<article>
-				<h2>Golf With Friends</h2>
-				<img id="kenAndBrittGolf" src="./images/kenAndBrittGolf.jpg" alt="Man and Woman in Golf Cart" style="width: 512px;height:512px;">
-				<p>Golfing with friends is truly the best way to play. The conversations had on a course can be used as a way to deepen relationships... or talk smack about your buddy's slice off the tee. My wife (pictured above) picked up golf a few years back, originally as a way to spend time with me on a shared hobby. Soon, she found herself hooked. Meeting new people, joking around, and who could forget the ladies golf outfits!</p>
+			<article id="withFriends">
+				<div id="withFriendsPictureContainer">
+					<img id="kenAndBrittGolf" src="./images/kenAndBrittGolf.jpg" alt="Man and Woman in Golf Cart">
+				</div>
+				<div class="withFriendsContentContainer">
+					<h2>Golf With Friends</h2>
+					<p>Golfing with friends is truly the best way to play. The conversations 
+						had on a course can be used as a way to deepen relationships... or talk 
+						smack about your buddy's slice off the tee. My wife (pictured above) picked 
+						up golf a few years back, originally as a way to spend time with me on a shared 
+						hobby. Soon, she found herself hooked. Meeting new people, joking around, 
+						and who could forget the ladies golf outfits!</p>
+				</div>
 			</article>
-			<article>
-				<h2>Places I've Played</h2>
-				<div class="row">
-   					<div class="column">
+			<article id="placesPlayed">
+				<h2>Courses I've Lost Balls At</h2>
+				<div class="placesPlayedGridContainer">
+   					<div class="placesItem1">
    						<a href="https://www.bearcreekvalley.com">
    							<img class="courseImages" src="./images/courses/bearCreekValley.jpg" alt="Bear Creek Valley Golf Course" style="width:256px;height:256px;">
 						   <h3>Bear Creek Valley Golf Course</h3>
 						   <h4>Osage Beach, Missouri</h4>
 						</a>
    					</div>
-   					<div class="column">
+   					<div class="placesItem2">
    						<a href="https://bridgetonmo.com/392/Berry-Hill-Golf-Course">
    							<img class="courseImages" src="./images/courses/berryHill.jpg" alt="Berry Hill Golf Course" style="width:256px;height:256px;">
 							<h3>Berry Hill Golf Course</h3>
 							<h4>Bridgeton, Missouri</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem3">
 						<a href="https://www.crevecoeurgolf.com">
 							<img class="courseImages" src="./images/courses/creveCoeur.jpg" alt="Creve Coeur Golf Course" style="width:256px;height:256px;">
 							<h3>Creve Coeur Golf Course</h3>
 							<h4>Creve Coeur, Missouri</h4>
 						</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="column">
+					<div class="placesItem4">
 						<a href="https://deerchasegolf.com">
 							<img class="courseImages" src="./images/courses/deerCreek.png" alt="The Golf Club at Deer Chase" style="width:256px;height:256px;">
 							<h3>The Golf Club at Deer Chase</h3>
 							<h4>Linn Creek, Missouri</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem5">
 						<a href="http://www.eaglesprings.com">
 							<img class="courseImages" src="./images/courses/eagleSprings.jpg" alt="Eagle Springs Golf Course" style="width:256px;height:256px;">
 							<h3>Eagle Springs Golf Course</h3>
 							<h4>Florissant, Missouri</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem6">
 						<a href="https://www.osagenational.com">
 							<img class="courseImages" src="./images/courses/osageNational.jpg" alt="Osage National Golf Resort" style="width:256px;height:256px;">
 							<h3>Osage National Golf Resort</h3>
 							<h4>Osage Beach, Missouri</h4>
 						</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="column">
+					<div class="placesItem7">
 						<a href="https://golf-headquarters.com">
 							<img class="courseImages" src="./images/courses/pheasantRun.jpg" alt="Pheasant Run Golf Course" style="width:256px;height:256px;">
 							<h3>Pheasant Run Golf Course</h3>
 							<h4>O'Fallon, Missouri</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem8">
 						<a href="https://www.playadoradagolf.com">
 							<img class="courseImages" src="./images/courses/playaDorada.jpg" alt="Playa Dorada Golf Course" style="width:256px;height:256px;">
 							<h3>Playa Dorada Golf Course</h3>
 							<h4>Puerto Plata, Dominican Republic</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem9">
 						<a href="http://www.ruthparkgolf.org">
 							<img class="courseImages" src="./images/courses/ruthPark.jpg" alt="Ruth Park Golf Course" style="width:256px;height:256px;">
 							<h3>Ruth Park Golf Course</h3>
 							<h4>University City, Missouri</h4>
 						</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="column">
+					<div class="placesItem10">
 						<a href="https://stannmo.org/140/Golf-Course">
 							<img class="courseImages" src="./images/courses/stann.jpg" alt="St. Ann Golf Course" style="width:256px;height:256px;">
 							<h3>St. Ann Golf Course</h3>
 							<h4>St. Ann, Missouri</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem11">
 						<a href="https://www.margaritavilleresortlakeoftheozarks.com/play/golf/golf">
 							<img class="courseImages" src="./images/courses/tantara.jpg" alt="Tan-Tar-A Golf Course" style="width:256px;height:256px;">
-							<h3>Tan-Tar-A Golf Course (Now The Golf Resort at Margaritaville)</h3>
+							<h3>Tan-Tar-A Golf Course</h3>
 							<h4>Osage Beach, Missouri</h4>
 						</a>
 					</div>
-					<div class="column">
+					<div class="placesItem12">
 						<a href="http://www.fallsgolf.com">
 							<img class="courseImages" src="./images/courses/theFalls.jpg" alt="The Falls Golf Club" style="width:256px;height:256px;">
 							<h3>The Falls Golf Club</h3>
 							<h4>O'Fallon, Missouri</h4>
 						</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="column">
+					<div class="placesItem13">
 						<a href="https://holidayisland.us/golf/">
 							<img class="courseImages" src="./images/courses/holidayIsland.png" alt="Holiday Island Golf Course" style="width:256px;height:256px;">
 							<h3>Holiday Island Golf Course</h3>
@@ -169,11 +196,11 @@
 				</div>
    		</main>
    		<footer>
-			<p> This page not actually sponsored by Gimme Golf Club of St. Louis, <em>but you should <a href="https://www.facebook.com/GimmeGolfClub/">check it out anyway!</a></em>
-			</p>
 			<a href="https://www.facebook.com/GimmeGolfClub/">
-				<img class="footerImages" src="./images/gimmeGolfLogo.jpg" alt="Gimme Golf Club St. Louis" style="width:64px;height:64px;">
-			</a>
+			   <img class="footerImages" src="./images/gimmeGolfLogo.jpg" alt="Gimme Golf Club St. Louis" style="width:64px;height:64px;">
+		   </a>
+			<p> This page not actually sponsored by Gimme Golf Club of St. Louis, 
+				<em>but you should <a href="https://www.facebook.com/GimmeGolfClub/">check it out anyway!</a></em></p>
 			<p>&copy; 2020 Ken Lerdahl</p>
    		</footer>
    </body>
